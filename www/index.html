@@ -8,34 +8,42 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="./css/themes/Order.css" />
+    <link rel="stylesheet" href="./css/themes/jquery.mobile.icons.min.css" />
 </head>
 
 <body onload="init()">
 
     <!-- My app main page -->
     <div data-role="page" id="pageone">
-        <div data-role="header">
-            <h1>Tourist attractios!</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <a href="#masuria" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Masuria</a>
-            <div data-role="popup" id="masuria">
-                <p>Masuria</p>
-                <img src="assets/masuria.jpg">
-            </div>
-        </div>
+
+        <!-- Pole do wpisania -->
+        <input type="text" name="Name" id="Name" placeholder="Name" value="">
+
+        <!-- Kalendarz -->
+        <input type="date" name="date" id="date" value="">
+
+        <!-- Lista z owocami -->
+        <select name="Products" id="Products" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+			    <option>Choose product:</option>
+			    <optgroup label="Fruits">
+			        <option value="jabłko" selected="">Jabłko</option>
+			        <option value="banan">Banan</option>
+			        <option value="pomarańcza">Pomarańcza</option>
+			        <option value="truskawka">Truskawka</option>
+					<option value="kiwi">Kiwi</option>
+			    </optgroup>
+			</select>
+
+
+
+        <input type="button" value="Approve" data-theme="a">
+        <!-- Buttony -->
+        <input type="button" value="Reject" data-theme="a">
+
 
     </div>
 
-    <!-- Mobile device details page -->
-    <div data-role="page" id="details" data-dialog="true">
-        <div data-role="header" data-theme="a">
-            <h1>It's me</h1>
-        </div>
-        <div role="main" class="ui-content">
-            <p id="deviceDetails">Place for device details ...</p>
-        </div>
-    </div>
 
 </body>
 
