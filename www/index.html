@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <link rel="stylesheet" href="./css/themes/Order.css" />
-    <link rel="stylesheet" href="./css/themes/jquery.mobile.icons.min.css" />
+
 </head>
 
 <body onload="init()">
@@ -17,32 +16,89 @@
     <!-- My app main page -->
     <div data-role="page" id="pageone">
 
-        <!-- Pole do wpisania -->
-        <input type="text" name="Name" id="Name" placeholder="Name" value="">
-
-        <!-- Kalendarz -->
-        <input type="date" name="date" id="date" value="">
-
-        <!-- Lista z owocami -->
-        <select name="Products" id="Products" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
-			    <option>Choose product:</option>
-			    <optgroup label="Fruits">
-			        <option value="jabłko" selected="">Jabłko</option>
-			        <option value="banan">Banan</option>
-			        <option value="pomarańcza">Pomarańcza</option>
-			        <option value="truskawka">Truskawka</option>
-					<option value="kiwi">Kiwi</option>
-			    </optgroup>
-			</select>
-
-
-
-        <input type="button" value="Approve" data-theme="a">
-        <!-- Buttony -->
-        <input type="button" value="Reject" data-theme="a">
-
-
+        <div data-role="header">
+            <h1>Drinki</h1>
+            <a href="#left-panel" data-theme="d" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Drinki</a>
+        </div>
+        <div role="main" class="ui-content">
+            Wybierz drinka
+        </div>
+        <div data-role="panel" id="left-panel" data-theme="b">
+            <a href="#C" class="ui-shadow ui-btn ui-corner-all">Cosmopolitan</a>
+            <a href="#S" class="ui-shadow ui-btn ui-corner-all">Cuba Libre</a>
+            <a href="#M" class="ui-shadow ui-btn ui-corner-all">Mohito</a>
+        </div>
     </div>
+
+    <div data-role="page" id="C">
+
+        <div data-role="header">
+            <h1>Drinki</h1>
+            <a href="#left-panel" data-theme="d" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Drinki</a>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Składniki: wódka cytrynowa (40 ml) likier Cointreau lub triple sec (15 ml) sok z limonki (15 ml) sok żurawinowy (30 ml) kostki lodu Sposób przygotowania: Do shakera wrzucamy kilka kostek lodu. Następnie wlewamy do niego wszystkie składniki:
+                wódkę, likier Cointreau, świeżo wyciśnięty sok z limonki oraz sok żurawinowy. Dokładnie wstrząsamy i przelewamy wszystko do schłodzonego kieliszka koktajlowego. Drink ozdabiamy plastrem limonki lub skórką pomarańczy.
+            </p>
+            <a href="#cosmo" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cosmopolitan</a>
+            <div data-role="popup" id="cosmo">
+                <p>Cosmopolitan</p>
+                <img src="assets/cosmo.jpg">
+            </div>
+        </div>
+        <div data-role="panel" id="left-panel" data-theme="b">
+            <a href="#C" class="ui-shadow ui-btn ui-corner-all">Cosmopolitan</a>
+            <a href="#S" class="ui-shadow ui-btn ui-corner-all">Rum with coke</a>
+            <a href="#M" class="ui-shadow ui-btn ui-corner-all">Mohito</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="S">
+
+        <div data-role="header">
+            <h1>Drinki</h1>
+            <a href="#left-panel" data-theme="d" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Drinki</a>
+        </div>
+        <div role="main" class="ui-content">
+            <p> Składniki białego rum - 60 ml zimna Coca cola - klin limonki - Sposób przygotowania drinka Zalej rumem lód w schłodzonej szklance typu highball i dolej do pełna coli. Na koniec wciśnij do drinka sok z klina limonki. </p>
+
+            <a href="#cuba" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Cuba Libre</a>
+            <div data-role="popup" id="cuba">
+                <p>Cula Libre</p>
+                <img src="assets/cuba.jpg">
+            </div>
+        </div>
+        <div data-role="panel" id="left-panel" data-theme="b">
+            <a href="#C" class="ui-shadow ui-btn ui-corner-all">Cosmopolitan</a>
+            <a href="#S" class="ui-shadow ui-btn ui-corner-all">Rum with coke</a>
+            <a href="#M" class="ui-shadow ui-btn ui-corner-all">Mohito</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="M">
+
+        <div data-role="header">
+            <h1>Drinki</h1>
+            <a href="#left-panel" data-theme="d" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-icon-nodisc">Drinki</a>
+        </div>
+        <div role="main" class="ui-content">
+            <p>Składniki: biały rum (60 ml) syrop cukrowy (20 ml) lub cukier (biały lub trzcinowy – 2 łyżeczki) mięta (6-8 listków) limonka (4-5 cząstek) kruszony lód woda gazowana Sposób przygotowania: Mojito drink zaczynamy przygotowywać od włożenia do
+                szklanki 4-5 cząstek limonki, 6-8 listków mięty oraz wlewamy syrop cukrowy (lub wsypujemy dwie łyżeczki cukru). Wszystko rozcieramy muddlerem. Następnie wsypujemy kruszony lód (mniej więcej do połowy) i wlewamy biały rum. Dokładnie mieszamy
+                i uzupełniamy szklankę kruszonym lodem oraz wodą gazowaną. Mojito dekorujemy plastrem limonki i gałązką mięty.
+            </p>
+            <a href="#mohito" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Mohito</a>
+            <div data-role="popup" id="mohito">
+                <p>Mohito</p>
+                <img src="assets/mohito.jpg">
+            </div>
+        </div>
+        <div data-role="panel" id="left-panel" data-theme="b">
+            <a href="#C" class="ui-shadow ui-btn ui-corner-all">Cosmopolitan</a>
+            <a href="#S" class="ui-shadow ui-btn ui-corner-all">Rum with coke</a>
+            <a href="#M" class="ui-shadow ui-btn ui-corner-all">Mohito</a>
+        </div>
+    </div>
+
 
 
 </body>
